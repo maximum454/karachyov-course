@@ -1,0 +1,45 @@
+.footer{
+	background-color: #fafafa;
+	border-top: 1px solid #eee;
+	&__body{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		padding: 35px 0 25px;
+	}
+	&__item{
+		flex: 1 0 calc(25% - 20px);
+		padding: 0 10px;
+		display: block;
+		text-decoration: none;
+	}
+	&__title{
+		text-transform: uppercase;
+		color: #202020;
+		font-size: 14px;
+		margin-bottom: 11px;
+	}
+	&__copy{
+		border-top: 1px solid #eee;
+		color: #777;
+		font-size: 13px;
+		text-align: center;
+		padding: 15px 0;
+	}
+	@include r(767){
+		&__item{
+			flex: 1 0 calc(50% - 20px);
+			padding: 0;
+			display: block;
+			text-decoration: none;
+		}
+	}
+	@include r(374){
+		&__item{
+			flex: 1 0 100%;
+			padding: 0 10px;
+			display: block;
+			text-decoration: none;
+		}
+	}
+}

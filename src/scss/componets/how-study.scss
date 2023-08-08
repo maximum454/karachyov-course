@@ -1,0 +1,33 @@
+.how-study{
+  margin-bottom: 100px;
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item{
+    flex: 1 0 calc(33.3% - 30px);
+    max-width: 33.3%;
+    height: 160px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__num{
+    font-size: 240px;
+    line-height: 1;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, #00B39B 0%, #0769AD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+  }
+}

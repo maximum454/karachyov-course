@@ -1,0 +1,27 @@
+.price{
+  &__list{
+    padding: 0;
+    list-style: none;
+    li{
+      margin-bottom: 15px;
+      color: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__name{
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00B39B 0%, #0769AD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__count{
+    font-size: 20px;
+  }
+}

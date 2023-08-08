@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "Курс - Главная",
+    "description": "Курсы по веб разработке",
+    })
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/karachyov_course.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__body">
+                        <div class="hero__content">
+                            <h2 class="hero__suptitle">Курс</h2>
+                            <h1 class="hero__title">Быстрый старт <br>вёрстка сайтов на&nbsp;HTML и&nbsp;CSS</h1>
+                            <p class="hero__anons">Научу превращать дизайн в&nbsp;код<br> и&nbsp;создавать современные сайты
+                                с&nbsp;нуля <b><nobr>за 1 месяц</nobr></b></p>
+                        </div>
+                        <div class="hero__anim">
+                            <div class="anim-hero"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="study">
+                <div class="study__body">
+                    <section class="study__content">
+                        <h2 class="main-title first-letter">Что будем проходит</h2>
+                        <div>
+                            <details class="details">
+                                <summary class="details__summary box-out">HTML <span>(HyperText Markup Language)</span></summary>
+                                <div class="details__content box-in">
+                                    <ol class="list-num">
+                                        <li>Что такое HTML</li>
+                                        <li>Создаем файл HTML</li>
+                                        <li>Структура документа</li>
+                                        <li>HTML Теги</li>
+                                        <li>Вложенные теги</li>
+                                        <li>Атрибуты тегов</li>
+                                        <li>Семантика</li>
+                                    </ol>
+                                </div>
+                            </details>
+                            <details class="details">
+                                <summary class="details__summary box-out">CCS <span>(Cascading Style Sheets)</span></summary>
+                                <div class="details__content box-in">
+                                    <ol class="list-num">
+                                        <li>Что такое HTML</li>
+                                        <li>Создаем файл HTML</li>
+                                        <li>Структура документа</li>
+                                        <li>HTML Теги</li>
+                                        <li>Вложенные теги</li>
+                                        <li>Атрибуты тегов</li>
+                                        <li>Семантика</li>
+                                    </ol>
+                                </div>
+                            </details>
+                            <details class="details">
+                                <summary class="details__summary box-out">HTML <span>(HyperText Markup Language)</span></summary>
+                                <div class="details__content box-in">
+                                    <ol class="list-num">
+                                        <li>Что такое HTML</li>
+                                        <li>Создаем файл HTML</li>
+                                        <li>Структура документа</li>
+                                        <li>HTML Теги</li>
+                                        <li>Вложенные теги</li>
+                                        <li>Атрибуты тегов</li>
+                                        <li>Семантика</li>
+                                    </ol>
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+                    <aside class="study__aside">
+                        <h2 class="main-title first-letter">Стоимость обучения</h2>
+                        <div class="price box-in">
+                            <ul class="price__list">
+                                <li><span class="price__name">Индивидуально:</span> <span class="price__count">70 000 тг</span></li>
+                                <li><span class="price__name">Группа:</span> <span class="price__count">50 000 тг</span></li>
+                                <li><span class="price__name">Самостоятельно:</span> <span class="price__count">5 000 тг</span></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            <section class="how-study">
+                <h2 class="main-title first-letter">Как проходит обучение:</h2>
+                <div class="how-study__body">
+                    <div class="how-study__item box-out">
+                        Изучаете тему<br>
+                        и выполняйте задания
+                        <div class="how-study__num">1</div>
+                    </div>
+                    <div class="how-study__item box-out">
+                        Выполняйте<br>
+                        домашние задания
+                        <div class="how-study__num">2</div>
+                    </div>
+                    <div class="how-study__item box-out">
+                        Проверяем<br>
+                        Домашниее задание
+                        <div class="how-study__num">3</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/karachyov_course.js"></script>
+</body>
+
+</html>
