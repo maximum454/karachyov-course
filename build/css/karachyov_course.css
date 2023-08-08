@@ -789,14 +789,14 @@ html.remodal-is-locked {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 21px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  padding: 15px 20px;
   border-radius: 20px;
   cursor: pointer;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -819,8 +819,13 @@ html.remodal-is-locked {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  border-color: transparent;
+  background: -o-linear-gradient(45deg, #00b39b, #0769ad);
+  background: linear-gradient(45deg, #00b39b, #0769ad);
+  border-radius: 20px;
+  background-color: #151A20;
+  -webkit-box-shadow: 9px 9px 10px #080A0D, -9px -9px 10px #222A33;
+          box-shadow: 9px 9px 10px #080A0D, -9px -9px 10px #222A33;
 }
 
 .btn.btn-primary:hover {
@@ -1139,14 +1144,12 @@ html.remodal-is-locked {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: transparent;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 20px;
+  border: none;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1157,6 +1160,26 @@ html.remodal-is-locked {
 .form-control:focus {
   outline: none;
   border-color: #000;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form-control::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-control::placeholder {
+  color: #ffffff;
 }
 
 .form-group-simbol {
@@ -1415,33 +1438,22 @@ html.remodal-is-locked {
 }
 
 .remodal__title {
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-  margin: 0 0 74px;
+  color: #ffffff;
+  margin: 0 0 40px;
 }
 
 .remodal .remodal-close {
   right: 20px;
-  top: 10px;
+  top: 22px;
   left: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-right: 30px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000000;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .remodal .remodal-close:before {
@@ -1449,27 +1461,27 @@ html.remodal-is-locked {
   left: auto;
   right: 0;
   top: 50%;
-  margin-top: -6px;
-  background-image: url("../img/icons-sprite.svg#modal-close");
+  margin-top: -12px;
+  background-image: url("../img/close.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 14px;
-  height: 14px;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
-.remodal .form-control {
-  padding: 7px 0;
-  color: #333;
-  border-color: #000;
-  text-transform: uppercase;
+.remodal .remodal-close:hover {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .remodal .btn {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  display: block;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .remodal-wrapper {
@@ -1477,7 +1489,7 @@ html.remodal-is-locked {
 }
 
 .remodal-overlay {
-  background: rgba(255, 255, 255, 0.9);
+  background-color: #151A20;
 }
 
 .icon {
@@ -1560,6 +1572,23 @@ html.remodal-is-locked {
 body {
   background-color: #151A20;
   font-family: "Open Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0769AD;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #00B39B;
 }
 
 body.lock {
@@ -1990,6 +2019,10 @@ a:hover {
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
+  }
+
+  .remodal {
+    max-width: 420px;
   }
 }
 

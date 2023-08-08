@@ -16,7 +16,19 @@
 body {
   background-color: #151A20;
   font-family: 'Open Sans', sans-serif;
-
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #0769AD;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #00B39B;
+  }
   &.lock {
     overflow: hidden;
   }
