@@ -1421,7 +1421,7 @@ function anim() {
         repeat: 1,
         ease: "power1.inOut",
         stagger: {
-            grid: [3,3],
+            grid: [4,3],
             from: "random",
             ease: "power1.inOut",
             amount: 4
