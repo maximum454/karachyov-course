@@ -1,0 +1,30 @@
+.about{
+  margin: 20px 0 100px;
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__content{
+    flex: 1 0 50%;
+    max-width: 50%;
+    align-self: center;
+    padding: 20px;
+  }
+  &__items{
+    padding: 20px;
+    flex: 1;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px 20px;
+  }
+  &__item{
+    h3{
+      font-size: 21px;
+      margin: 0 0 30px;
+      color: #ffffff;
+    }
+  }
+}
