@@ -1885,6 +1885,7 @@ a:hover {
 }
 
 .hero {
+  margin-top: 40px;
   margin-bottom: 100px;
 }
 
@@ -1902,10 +1903,13 @@ a:hover {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   max-width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .hero__suptitle {
   font-size: 56px;
+  margin: 0 0 30px;
 }
 
 .hero__title {
