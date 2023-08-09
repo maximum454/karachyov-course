@@ -1,0 +1,24 @@
+.crm{
+  margin: 20px 0 100px;
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__figure{
+    flex: 1 0 363px;
+    max-width: 363px;
+  }
+  &__content{
+    flex: 1 0 calc(50% - 30px);
+    max-width: 50%;
+    align-self: center;
+    color: #ffffff;
+    .btn{
+      margin-top: 40px;
+      width: 100%;
+      max-width: 215px;
+    }
+  }
+}

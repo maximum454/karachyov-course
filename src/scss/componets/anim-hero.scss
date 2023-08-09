@@ -1,0 +1,27 @@
+.anim-hero{
+  position: relative;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 330px;
+  margin: 60px auto;
+  &__item{
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .3s ease;
+    color: #151A20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    &.active{
+      color: #ffffff;
+      background: #151A20;
+      box-shadow:  9px 9px 10px #080A0D,
+      -9px -9px 10px #222A33;
+      transition: .3s ease;
+    }
+  }
+}
