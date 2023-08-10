@@ -1424,7 +1424,7 @@ function anim() {
             grid: [4,3],
             from: "random",
             ease: "power1.inOut",
-            amount: 4
+            amount: 3
         }
     });
 }
