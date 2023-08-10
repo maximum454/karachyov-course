@@ -17,4 +17,11 @@
       height: 100%;
     }
   }
+  @include r(767){
+    margin: 20px 0 80px;
+    .form-group{
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  }
 }

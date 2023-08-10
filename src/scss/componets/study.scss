@@ -18,4 +18,10 @@
       max-width: 300px;
     }
   }
+  @include r(767){
+    &__aside{
+      margin-top: 40px;
+      max-width: 100%;
+    }
+  }
 }
