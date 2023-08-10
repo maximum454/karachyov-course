@@ -65,6 +65,10 @@
         max-width: 363px;
         border-radius: 20px;
         overflow: hidden;
+        img{
+            display: block;
+            margin: auto;
+        }
     }
     @include r(1023){
         &__text{
@@ -78,6 +82,11 @@
     }
     @include r(767){
         margin: 20px 0 80px;
+        &__caption {
+            overflow: auto;
+            padding: 20px 10px;
+            margin: 20px -10px;
+        }
     }
 }
 

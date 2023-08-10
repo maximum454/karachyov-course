@@ -10,6 +10,10 @@
     flex: 1 0 363px;
     max-width: 363px;
     margin: 0;
+    img{
+      display: block;
+      margin: auto;
+    }
   }
   &__content{
     flex: 1 0 calc(50% - 30px);

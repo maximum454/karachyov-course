@@ -1683,6 +1683,11 @@ html.remodal-is-locked {
   overflow: hidden;
 }
 
+.tabs__figure img {
+  display: block;
+  margin: auto;
+}
+
 /*
 <div class="tabs">
 
@@ -2261,6 +2266,11 @@ a:hover {
   margin: 0;
 }
 
+.crm__figure img {
+  display: block;
+  margin: auto;
+}
+
 .crm__content {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(50% - 30px);
@@ -2490,6 +2500,12 @@ a:hover {
     margin: 20px 0 80px;
   }
 
+  .tabs__caption {
+    overflow: auto;
+    padding: 20px 10px;
+    margin: 20px -10px;
+  }
+
   .d-desktop-none {
     display: block;
   }
@@ -2566,6 +2582,7 @@ a:hover {
 
   .about__items {
     max-width: 100%;
+    padding: 10px;
   }
 
   .feedback {
