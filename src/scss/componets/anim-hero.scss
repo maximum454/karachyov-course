@@ -24,4 +24,12 @@
       transition: .3s ease;
     }
   }
+  @include r(1023){
+    max-width: 100%;
+    margin: 20px auto 0;
+    &__item{
+      flex: 1 0 calc(16.6% - 30px);
+      height: 90px;
+    }
+  }
 }

@@ -1,10 +1,20 @@
 .footer{
-
+	margin: 20px 0 40px;
 	&__body{
 		display: flex;
 		flex-wrap: wrap;
-		gap: 20px;
-		padding: 35px 0 25px;
+		gap: 30px;
+		justify-content: space-between;
 	}
-
+	&__logo{
+		margin-right: 120px;
+	}
+	&__nav{
+		flex: 1;
+	}
+	@include r(1023){
+		&__logo{
+			margin-right: 20px;
+		}
+	}
 }

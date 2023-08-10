@@ -12,5 +12,10 @@
     flex: 1 0 362px;
     max-width: 362px;
   }
-
+  @include r(1023){
+    margin-bottom: 80px;
+    &__aside{
+      max-width: 300px;
+    }
+  }
 }

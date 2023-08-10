@@ -1,25 +1,5 @@
-.form-w410 {
-    max-width: 410px;
-}
-
-.form-bg {
-    background: #f1f5f9;
-    border-radius: 4px;
-    padding: 32px;
-}
-.form-group     {
+.form-group{
     margin-bottom: 20px;
-    &.mb-60 {
-        margin-bottom: 60px;
-    }
-    p {
-        font-size: 13px;
-        line-height: 16px;
-        color: #333333;
-    }
-    @include r(767){
-        margin-bottom: 45px;
-    }
 }
 .form-column{
     width: 740px;
@@ -65,14 +45,35 @@
     background-clip: padding-box;
     border: none;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-bottom: 6px;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #00b39b, #0769ad);
     &:focus{
         outline: none;
-        border-color: #000;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background:linear-gradient(45deg,#00b39b, #0769ad);
+            -webkit-mask:
+                    linear-gradient(#151A20 0 0) content-box,
+                    linear-gradient(#151A20 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
     }
     &::placeholder{
         color: #ffffff;
     }
 
+}
+.form-argee{
+    color: #ffffff;
+    font-size: 10px;
 }
 
 .form-group-simbol {

@@ -22,6 +22,7 @@
   &__anons{
     margin-top: 10px;
     font-size: 18px;
+    line-height: 25px;
     b{
       color: #00B39B;
     }
@@ -31,5 +32,15 @@
     font-size: 18px;
     color: #ffffff;
     position: relative;
+  }
+  @include r(1023){
+    &__content{
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+    &__anim{
+      flex: 1 0 100%;
+      font-size: 18px;
+    }
   }
 }

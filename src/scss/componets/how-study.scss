@@ -30,4 +30,16 @@
     -webkit-text-fill-color: transparent;
     opacity: .1;
   }
+  @include r(1023){
+    margin-bottom: 80px;
+    &__item{
+      height: 140px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__num{
+      font-size: 170px;
+      top: 20px;
+    }
+  }
 }

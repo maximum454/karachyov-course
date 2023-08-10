@@ -54,12 +54,16 @@ p {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  @include r(1023){
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 a {
   transition: .3s ease;
   text-decoration: none;
-  color: #ffffff;
+  color: #0769AD;
 
   &:hover {
     color: #00B39B;
@@ -158,6 +162,7 @@ a {
 @import "componets/nav-header";
 @import "componets/hero";
 @import "componets/footer";
+@import "componets/nav-footer";
 @import "componets/study";
 @import "componets/price";
 @import "componets/details";

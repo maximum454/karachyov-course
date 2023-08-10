@@ -1,0 +1,28 @@
+.nav-footer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  &__item{
+    flex: 1 0 calc(33.3% - 30px);
+    max-width: 33.3%;
+    margin-bottom: 30px;
+  }
+  &__title{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+  @include r(1023){
+    gap: 20px;
+  }
+  &__item{
+    flex: 1;
+    max-width: none;
+    a{
+      display: block;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
