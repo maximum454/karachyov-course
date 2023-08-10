@@ -42,29 +42,17 @@
         max-width: 420px;
     }
     @include r(767){
-        padding: 63px 20px 20px;
-        &__title{
-            font-size: 16px;
-            line-height: 20px;
-            margin: 0 0 38px;
-
-        }
-        .remodal-close {
-            font-size: 14px;
-            line-height: 17px;
-        }
-        .form-control{
-            border-width: 1px;
-        }
+        padding: 20px;
         .btn{
             width: 100%;
             font-size: 14px;
             line-height: 17px;
+            margin-top: 20px;
         }
     }
 }
 .remodal-wrapper {
-    padding: 0;
+    padding: 20px;
 }
 .remodal-overlay{
     background-color: #151A20;

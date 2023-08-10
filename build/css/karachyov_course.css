@@ -1195,7 +1195,11 @@ html.remodal-is-locked {
 
 .form-argee {
   color: #ffffff;
-  font-size: 10px;
+  font-size: 14px;
+}
+
+.form-argee a {
+  font-size: initial;
 }
 
 .form-group-simbol {
@@ -1501,7 +1505,7 @@ html.remodal-is-locked {
 }
 
 .remodal-wrapper {
-  padding: 0;
+  padding: 20px;
 }
 
 .remodal-overlay {
@@ -2472,28 +2476,14 @@ a:hover {
 
 @media only screen and (max-width: 767px) {
   .remodal {
-    padding: 63px 20px 20px;
-  }
-
-  .remodal__title {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0 0 38px;
-  }
-
-  .remodal .remodal-close {
-    font-size: 14px;
-    line-height: 17px;
-  }
-
-  .remodal .form-control {
-    border-width: 1px;
+    padding: 20px;
   }
 
   .remodal .btn {
     width: 100%;
     font-size: 14px;
     line-height: 17px;
+    margin-top: 20px;
   }
 
   .tabs {
